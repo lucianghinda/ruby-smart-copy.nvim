@@ -38,6 +38,7 @@ function M.smart_copy_ruby_method()
   -- Query to find method and class nodes
   local query_text = [[
     (method) @method
+    (singleton_method) @method
     (class) @class
   ]]
 
