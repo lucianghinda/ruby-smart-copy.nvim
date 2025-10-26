@@ -130,6 +130,49 @@ You can customize these options in the `setup()` function.
 
 Currently supports macOS clipboard (`pbcopy`). Support for other platforms (Linux/Windows) can be added by detecting the clipboard command.
 
+## Development
+
+### Running Tests
+
+This plugin uses [plenary.nvim](https://github.com/nvim-lua/plenary.nvim) for testing.
+
+#### Prerequisites
+
+Install plenary.nvim:
+
+```lua
+-- Using lazy.nvim
+{ "nvim-lua/plenary.nvim" }
+```
+
+#### Run Tests
+
+```bash
+# Using the test script
+./run_tests.sh
+
+# Or using make
+make test
+```
+
+#### Test Structure
+
+```
+tests/
+├── fixtures/          # Sample Ruby files for testing
+│   ├── user.rb       # File with schema information
+│   └── simple.rb     # File without schema
+├── minimal_init.lua  # Minimal Neovim config for tests
+└── ruby-smart-copy_spec.lua  # Test suite
+```
+
+The test suite covers:
+- Instance methods
+- Class methods with `def self.method_name` syntax
+- Class methods with `def ClassName.method_name` syntax
+- Schema information extraction
+- Error handling
+
 ## License
 
 MIT
@@ -137,3 +180,8 @@ MIT
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+When contributing, please:
+1. Add tests for new features
+2. Ensure all tests pass before submitting
+3. Follow the existing code style

@@ -1,0 +1,10 @@
+# Test artifacts
+test_class_methods.rb
+
+# Vim/Neovim
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
