@@ -4,8 +4,7 @@ A Neovim plugin for intelligently copying Ruby methods with their class context 
 
 This plugin was generated mostly with Claude Code.
 
-![example-of-how-it-works](https://github.com/user-attachments/assets/6202c575-3ec3-487d-819b-ed8acd9535f1)
-
+![example-of-how-ruby-smart-copy-works](https://github.com/user-attachments/assets/012b74a2-16ea-4fc9-b5c8-1e74bfa2b1fa)
 
 ## Features
 
